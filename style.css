@@ -1,0 +1,99 @@
+<style>
+* {
+  box-sizing: border-box margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Style the header */
+header {
+  background-color: #FFFAFA;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+  margin: 0;
+}
+header nav ul li a{
+	padding: 10px 20px;
+	display: block;
+	color: black;
+	text-align: center;
+	float: center;
+	word-spacing: 10px;
+	list-style: none;
+  background: #FFFAFA;
+	overflow: hidden;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+  text-align: right ;
+  list-style-type:circle;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+} 
+
+/* Style the list inside the menu "listas" */
+nav ul  {
+  list-style-type: none;
+  padding: 100px 100px;
+  border-style: groove;
+}
+
+#lateral li{
+  font-size: 30px;
+}
+
+#center{
+  border: black;
+}
+
+li{
+  display: inline;
+
+}
+
+nav dd {
+	list-style-type:circle;
+}
+/* Style the content */
+article {
+	column-count: 2;
+	text-align: center;
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #FFFAFA;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #F08080;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  border-style: groove;
+
+
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+} 
